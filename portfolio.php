@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<?php $thisPage = "portfolio"; ?>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <title>Project 3</title>
-    <?php $thisPage = "portfolio"; ?>
     <?php include "inc/top.inc"; ?>
 	<?php include "inc/nav.inc"; ?>
 

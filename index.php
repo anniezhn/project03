@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <title>Project 3</title>
-
+    <?php $thisPage="home" ?>
     <?php include "inc/top.inc"; ?>
     <?php include "inc/nav.inc"; ?>
 
@@ -53,6 +53,9 @@ $(function() {
       }
     }
   });
+
+
+
 });
 </script>
 
