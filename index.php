@@ -5,16 +5,16 @@
     <meta charset="utf-8">
     <title>Project 3</title>
 
-    <!-- only for long scrolly first page-->
-    <link rel="stylesheet" href="css/long-scrolly.css">
     <?php include "inc/top.inc"; ?>
+    <?php include "inc/nav.inc"; ?>
 
     <!-- Top Section -->
     <section id="first">
         <div class="container">
-
+        <h1>Annie Zhang</h1>
             <div class="content">
-
+              <p>A senior at the University of Rochester and a computer science major. Scroll or click on "Accomplishments" in the navigation bar to read about them.</p>
+              <img src="images/annie.jpg" alt="Annie Zhang">
             </div>
        </div><!-- .container -->
 
@@ -23,11 +23,13 @@
     <!-- Second Section -->
     <section id="second">
         <div class="container">
-
-            <h1></h1>
-
-            <div class="content">
-            </div><!-- .content -->
+          <h1>Accomplishments</h1>
+          <div class="content">
+            <div class="second-section">
+              <img src="images/flower.jpg" alt="Flower" class="second-pic">
+              <p>Lab 1 of CSC 174.</p>
+            </div>
+          </div>
 
        </div><!-- .container -->
 
