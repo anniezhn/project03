@@ -4,21 +4,10 @@
 <head>
     <meta charset="utf-8">
     <title>Project 3</title>
+
+    <!-- only for long scrolly first page-->
     <link rel="stylesheet" href="css/long-scrolly.css">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-
-<body>
-
-    <!-- Navigation -->
-    <nav class="main-menu">
-        <ul>
-            <li><a href="index.html#first">About</a></li>
-            <li><a href="index.html#second">Accomplishment</a></li>
-            <li><a href="portfolio">Portfolio</a></li>
-            <li><a href="contact.php"></a></li>
-        </ul>
-    </nav>
+    <?php include "inc/top.inc"; ?>
 
     <!-- Top Section -->
     <section id="first">
