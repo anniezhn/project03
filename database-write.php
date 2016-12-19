@@ -4,8 +4,6 @@
 	$phone = Trim(stripslashes($_POST['phone']));
 	$message = Trim(stripslashes($_POST['message']));
 
-
-
 	include 'db-info.php';
 	$connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 

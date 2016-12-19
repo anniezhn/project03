@@ -10,7 +10,7 @@
 
 	<div class="container">
 	<h1>Contact</h1>
-		<form action="database-write.php" method="post">
+		<form action="database-write.php" onsubmit="return(validateForm());" method="post">
 			<div>
 	            <label for="name">Name: </label>
 	            <input type="text" name="name" id="name">
@@ -41,7 +41,7 @@
 	<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<!-- Form Validation with Javascript-->
 	<script>
-		function formValidate(){
+		function validateForm(){
 			var name, email, phone;
 			name = document.getElementById("name").value;
 			email = document.getElementById("email").value;

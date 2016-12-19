@@ -43,6 +43,8 @@ img{
 	max-height: 200px;
 	padding: 20px;
 	align-content: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .second-pic{
@@ -51,11 +53,11 @@ img{
 	float: left;
 }
 
-p{
-	float: left;
+.second-section{
+	display: block;
+	margin-bottom: 100px;
 }
 
 .container{
 	padding: 20px;
-	margin: 20px;
 }
