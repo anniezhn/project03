@@ -12,21 +12,24 @@
 
 	<div class="slideshow-container">
 		<div class="mySlides fade">
-			<div class="numbertext">1 / 3</div>
-			<img src="img1.jpg" style="width:100%">
-			<div class="text">Caption Text</div>
+			<div class="numbertext">1 / 2</div>
+			<img src="images/lab01.png">
+			<div class="text">Lab 01</div>
+			<p>Lab 01 this is the first lab of CSC 174. This refamiliarized me with the basics of HTML and CSS that I learned in CSC 170. This includes a picture of a flower and grass and also includes fake text. You can see my Lab 1 <a href="http://urcsc170.org/azhang/lab01/">here</a>.</p>
 		</div>
 
 		<div class="mySlides fade">
-			<div class="numbertext">2 / 3</div>
-			<img src="img2.jpg" style="width:100%">
-			<div class="text">Caption Two</div>
+			<div class="numbertext">2 / 2</div>
+			<img src="images/lab02.png">
+			<div class="text">Lab 02</div>
+			<p>Lab 02 is the second lab of CSC 174. This lab was to explore PHP includes and helped me learn ahout how to use php includes and the correct format. You can see my lab 2 <a href="http://urcsc170.org/azhang/lab02/index.php">here.</a></p>
 		</div>
 
 		<div class="mySlides fade">
 			<div class="numbertext">3 / 3</div>
-			<img src="img3.jpg" style="width:100%">
-			<div class="text">Caption Three</div>
+			<img src="images/lab03.png">
+			<div class="text">Lab 03</div>
+			<p>This lab was the third lab of CSC 174. This lab was my first exploration into frontend framworks. You can see my lab 3 <a href="http://urcsc170.org/azhang/lab03">here.</a></p>
 		</div>
 
 		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -36,7 +39,11 @@
 	<span class="dot" onclick="currentSlide(1)"></span> 
 	<span class="dot" onclick="currentSlide(2)"></span> 
 	<span class="dot" onclick="currentSlide(3)"></span>
-	
+
+
+
+
+
 	<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script type="text/javascript">
 		var slideIndex = 1;

@@ -27,7 +27,7 @@
 }
 .main-menu a:hover { color: #ddd; }
 
-.active { color: white; }
+.active a{ color: white; }
 
 
 /*	****************************************
@@ -38,7 +38,7 @@ h1{
 	padding: 20px;
 }
 
-img{
+section img{
 	max-width: 200px;
 	max-height: 200px;
 	padding: 20px;
@@ -75,6 +75,16 @@ img{
   margin: auto;
 }
 
+.mySlides img{
+  width: 100%;
+  max-height: 300px;
+  text-align: center;
+}
+
+.mySlides p{
+  padding: 100px;
+}
+
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -103,7 +113,8 @@ img{
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  color: black;
+  background-color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
