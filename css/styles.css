@@ -1,6 +1,31 @@
+/*  ****************************************
+  Base
+  **************************************** */
+
+body{
+  font-family: 'Slabo 27px', serif;
+}
+h1{
+  text-align: left;
+  padding: 20px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+section img{
+  max-width: 200px;
+  max-height: 200px;
+  padding: 20px;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a:hover { color: #ddd; }
+
 /*	****************************************
-	Persistent Navigation
+	Layout!!
 	**************************************** */
+/* Persistent Nav */
 .main-menu {
 	position: fixed; /* required - magic */
 	top: 0; /* required - makes sure the menu sits where it's supposed to sit */
@@ -25,27 +50,16 @@
 	color: #666;
 	text-decoration: none;
 }
-.main-menu a:hover { color: #ddd; }
+
+
+
+/* State */
 
 .active a{ color: white; }
 
 
-/*	****************************************
-	Content
-	**************************************** */
-h1{
-	text-align: left;
-	padding: 20px;
-}
+/* Content */
 
-section img{
-	max-width: 200px;
-	max-height: 200px;
-	padding: 20px;
-	align-content: center;
-	margin-left: auto;
-	margin-right: auto;
-}
 
 .second-pic{
 	max-width: 100px;
