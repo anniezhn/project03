@@ -23,7 +23,7 @@ section img{
 a:hover { color: #ddd; }
 
 /*	****************************************
-	Layout!!
+	Layout
 	**************************************** */
 /* Persistent Nav */
 .main-menu {
@@ -52,30 +52,25 @@ a:hover { color: #ddd; }
 }
 
 
-
-/* State */
-
-.active a{ color: white; }
-
-
 /* Content */
-
 
 .second-pic{
 	max-width: 100px;
 	max-height: 100px;
-	float: left;
+	align-content: left;
 }
 
-.second-section{
-	display: block;
-	text-align: left;
+.accomplish{
+  text-align: left;
+}
+
+.accomplish table, th, td {
+   border: 0;
 }
 
 .container{
 	padding: 20px;
 }
-
 
 
 /*	****************************************
@@ -90,8 +85,8 @@ a:hover { color: #ddd; }
 }
 
 .mySlides img{
-  width: 100%;
-  max-height: 300px;
+  max-width: 700px;
+  max-height: 400px;
   text-align: center;
 }
 
@@ -178,4 +173,35 @@ a:hover { color: #ddd; }
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+}
+
+/* State */
+
+.active a{ color: white; }
+
+
+
+/*  *************************************
+  Media Queries
+  ************************************* */
+
+@media (max-width: 720px) {
+  .mySlides img{
+    max-width: 100%;
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 540px) {
+  .mySlides img{
+    max-width: 100%;
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mySlides img{
+    max-width: 100%;
+    max-height: 100px;
+  }
 }

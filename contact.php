@@ -8,9 +8,10 @@
     <?php include "inc/top.inc"; ?>
 	<?php include "inc/nav.inc"; ?>
 
+
 	<div class="container">
 	<h1>Contact</h1>
-		<form action="database-write.php" onsubmit="return(validateForm());" method="post">
+		<form name="myForm" action="database-write.php" onsubmit="return validateForm()" method="post">
 			<div>
 	            <label for="name">Name: </label>
 	            <input type="text" name="name" id="name">
@@ -42,10 +43,9 @@
 	<!-- Form Validation with Javascript-->
 	<script>
 		function validateForm(){
-			var name, email, phone;
-			name = document.getElementById("name").value;
-			email = document.getElementById("email").value;
-			phone = document.getElementById("phone").value;
+			var name = document.forms["myForm"]["name"].value;
+			var email = document.forms["myForm"]["email"].value;
+			var phone = document.forms["myForm"]["phone"].value;
 
 			// name, email, and phone must be filled out check
 			if(name==""){
@@ -56,18 +56,21 @@
 				alert("Email must be filled out");
 				return false;
 			}
+			ValidateEmail(email);
 			if(phone==""){
-				alert("Email must be filled out");
+				alert("Phone number must be filled out");
 				return false;
-			}
-
-			// make sure email is an email
-			var emailPat = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-			if(!emailPat.text(email)){
-				alert("Please provide a valid email address");
-				return false;
-			}
+			}ValidateEmail(email);
 		}
+
+		function ValidateEmail(mail){  
+			if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)){  
+		    	return (true)  
+			} 
+		    alert("You have entered an invalid email address!")  
+		    return (false)  
+		}
+
 	</script>
 </body>
 

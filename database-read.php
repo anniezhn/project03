@@ -19,23 +19,20 @@
 
 	<h1>Contacts</h1>
 
-	<table>
-	<tr>
-		<th>Id</th>
-		<th>Name</th>
-		<th>Email</th>
-		<th>Phone</th>
-		<th>Message</th>
-	</tr>
-	</table>
-
+	<table border="1">
+		<tr>
+			<th>Id</th>
+			<th>Name</th>
+			<th>Email</th>
+			<th>Phone</th>
+			<th>Message</th>
+		</tr>
 
 <?php
 	// 3. Use returned data (if any)
 	while($pages = mysqli_fetch_assoc($result)) {
 		// output data from each row
 ?>
-	<table>
 		<tr>
 			<td><?php echo $pages["id"]; ?></td>
 			<td><?php echo $pages["name"]; ?></td>
@@ -43,9 +40,9 @@
 			<td><?php echo $pages["phone"]; ?></td>
 			<td><?php echo $pages["message"]; ?></td>
 		</tr>
-	</table>
 
 <?php } ?>
+</table>
 
 	<br>
 	<a href=".">Back to the Index</a>

@@ -9,7 +9,6 @@
 	<?php include "inc/nav.inc"; ?>
 
 
-
 	<div class="slideshow-container">
 		<div class="mySlides fade">
 			<div class="numbertext">1 / 2</div>

@@ -12,10 +12,10 @@
 	$result = mysqli_query($connection, $query);
 
 	$NumberOfRowsAffected = mysqli_affected_rows($connection);
-		if($NumberOfRowsAffected < 1 ) {
+	if($NumberOfRowsAffected < 1 ) {
  		die('No records were written to the database. Waaaa!');
-	} 
-
+	}
+	
 
 	mysqli_close($connection);
 ?>
